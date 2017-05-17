@@ -4,8 +4,6 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-import javafx.print.Collation;
-
 public class Curso {
 	private String nome;
 	private String instrutor;
@@ -30,6 +28,20 @@ public class Curso {
 
 	public void adiciona(Aula aula) {
 		this.aulas.add(aula);
+	}
+
+	public int getTempototal() {
+		int tempoTotal = 0;
+		for (Aula aula : aulas) {
+			tempoTotal += aula.getTempo();
+		}
+		return tempoTotal;
+	}
+
+	@Override
+	public String toString() {
+		return "Curso [nome=" + nome + ",tempo total=" + this.getTempototal() + ", instrutor=" + instrutor + ", aulas="
+				+ aulas + "]";
 	}
 
 }

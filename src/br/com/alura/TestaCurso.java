@@ -17,6 +17,8 @@ public class TestaCurso {
 		
 		
 		System.out.println(aulas);
+		
+		System.out.println(curso.getAulas());
 	}
 
 }
