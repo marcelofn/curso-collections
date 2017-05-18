@@ -11,7 +11,7 @@ public class TestaCurso2 {
 
 		curso.adiciona(new Aula("Trabalhando com Array list", 21));
 		curso.adiciona(new Aula("Lista de objetos", 15));
-		curso.adiciona(new Aula("Aula 3 - Relacionamentos com coleÃ§Ãµes", 22));
+		curso.adiciona(new Aula("Aula 3 - Relacionamentos com coleções", 22));
 		
 		List<Aula> aulasImutaveis = curso.getAulas();
 		
