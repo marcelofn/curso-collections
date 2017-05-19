@@ -56,4 +56,14 @@ public class Curso {
 		return Collections.unmodifiableSet(alunos);
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((alunos == null) ? 0 : alunos.hashCode());
+		return result;
+	}
+
+	
+	
 }

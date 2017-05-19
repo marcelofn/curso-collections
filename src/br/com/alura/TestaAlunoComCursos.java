@@ -9,7 +9,7 @@ public class TestaAlunoComCursos {
 
 		curso.adiciona(new Aula("Trabalhando com Array list", 21));
 		curso.adiciona(new Aula("Lista de objetos", 15));
-		curso.adiciona(new Aula("Aula 3 - Relacionamentos com coleções", 22));
+		curso.adiciona(new Aula("Aula 3 - Relacionamentos com coleï¿½ï¿½es", 22));
 
 		Aluno a1 = new Aluno("Marcelo", 1234);
 		Aluno a2 = new Aluno("Ana", 4321);
@@ -22,5 +22,10 @@ public class TestaAlunoComCursos {
 		Set<Aluno> alunos = curso.getAlunos();
 
 		System.out.println(alunos);
+
+		System.out.println("Todos os alunos matriculados: ");
+		curso.getAlunos().forEach(a -> {
+			System.out.println(a);
+		});
 	}
 }
