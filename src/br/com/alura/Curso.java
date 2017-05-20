@@ -52,7 +52,7 @@ public class Curso {
 	}
 
 	public Set<Aluno> getAlunos() {
-	
+
 		return Collections.unmodifiableSet(alunos);
 	}
 
@@ -64,6 +64,8 @@ public class Curso {
 		return result;
 	}
 
-	
-	
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
+	}
+
 }

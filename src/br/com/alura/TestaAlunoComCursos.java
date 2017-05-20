@@ -27,5 +27,16 @@ public class TestaAlunoComCursos {
 		curso.getAlunos().forEach(a -> {
 			System.out.println(a);
 		});
+		
+		System.out.println("O aluno " + a1 + " esta matriculado?");
+		System.out.println(curso.estaMatriculado(a1));
+		
+		Aluno teste = new Aluno("Marcelo", 1234);
+		System.out.println("O aluno" + teste + " esta matriculado?");
+		System.out.println(curso.estaMatriculado(teste));
+		
+		
+		
+		
 	}
 }
